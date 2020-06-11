@@ -7,3 +7,6 @@ function createCard(){
        localStorage.setItem(promptKey,answerValue);
        location.reload();
     };
+    function eraseMe(){
+        localStorage.clear();
+    };

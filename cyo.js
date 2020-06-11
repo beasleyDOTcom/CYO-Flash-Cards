@@ -24,4 +24,6 @@ function createCard(){
         else {
             document.getElementById("result").innerHTML = "You did... something?"
         };
+         console.log(keyName);
+         console.log(userAnswer);
     };

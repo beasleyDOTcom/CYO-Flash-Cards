@@ -35,17 +35,19 @@
     <section id="create" class="section">
       <h1 class="sectionTitle">Create</h1>
       <div id="deckHouse">
-        <p id = "whatever">this is where everything is going to happen</p>
-       <input id="front"></input>
-       <br><br>
-       <input id="back"></input>
+        <p id = "whatever">Please enter your prompt:</p>
+       <input id="promptKey" required></input>
+      <p>Please enter the answer to your prompt:</p>
+       <input id="answerValue" required></input>
+    <p>Press the button to create a flash card</p>
     <button id="createButton" onclick="createCard()">Create Flash Card</button>
       </div>
       </section>
     <section id="play" class="section">
       <h1 class="sectionTitle">Play!</h1>
       <div id="deckHouse">
-        <p>this is where everything is going to happen</p>
+        <p>press start to play the game here</p>
+        <button id="startButton" onclick="startGame()">
       </div>
     </section>
     <section id="about" class="section">
@@ -60,5 +62,5 @@
       </ul>
       </div>
     </section>
-    
+      <script src="cyo.js"></script>
 </body>

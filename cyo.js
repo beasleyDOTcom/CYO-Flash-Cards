@@ -8,7 +8,7 @@ function createCard(){
         localStorage.clear();
     };
         var gameKey=0;
- function startGame(){
+    function startGame(){
          gameKey=Math.floor(Math.random()*localStorage.length);
         document.getElementById("prompt").innerHTML=localStorage.key(gameKey);
       
@@ -16,12 +16,13 @@ function createCard(){
         let userAnswer=document.getElementById("userAnswer").value;
         let keyName=localStorage.key(gameKey);
        console.log(keyName);
+       console.log(userAnswer);
         if(userAnswer==keyName){
             document.getElementById("result").innerHTML= "YOU DID IT!!!";
-        }
+          }
         else {
-            document.getElementById("result").innerHTML = "You did... something?"
-      };
-        };
-    };
+            document.getElementById("result").innerHTML = "You did... something?";
+             }
+          }
+       }
 

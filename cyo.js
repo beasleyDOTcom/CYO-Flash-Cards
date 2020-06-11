@@ -10,3 +10,7 @@ function createCard(){
     function eraseMe(){
         localStorage.clear();
     };
+function startGame(){
+        let gameKey=Math.floor(Math.random()*localStorage.length);
+        document.getElementById("prompt").innerHTML=localStorage.key(gameKey);
+    };

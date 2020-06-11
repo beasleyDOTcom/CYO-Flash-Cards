@@ -21,7 +21,7 @@ if(bonk){bonk.addEventListener("click", startGame);}
      function submitAnswer(){
         let userAnswer=document.getElementById("userAnswer").value;
         let keyName=localStorage.key(gameKey);
-        let valuePair = localStorage.get(keyName);
+        let valuePair = localStorage.getItem(keyName);
        console.log(keyName);
        console.log(userAnswer);
         if(userAnswer==valuePair){

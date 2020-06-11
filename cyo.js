@@ -10,7 +10,16 @@ function createCard(){
     function eraseMe(){
         localStorage.clear();
     };
-function startGame(){
+  function startGame(){
         let gameKey=Math.floor(Math.random()*localStorage.length);
         document.getElementById("prompt").innerHTML=localStorage.key(gameKey);
+        let userAnswer=document.getElementById("userAnswer").value;
+        let keyName=localStorage.key(gameKey);
+        if(userAnswer==keyName){
+            document.getElementById("result").innerHTML= "YOU DID IT!!!";
+        }
+        else {
+            document.getElementById("result").innerHTML = "You did... something?"
+        };
+    
     };

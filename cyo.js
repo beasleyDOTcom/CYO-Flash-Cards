@@ -18,6 +18,7 @@ var bonk = document.getElementById("startButton");
 if(bonk)
     {bonk.addEventListener("click", startGame);}
 function startGame(){
+    document.getElementById("result").innerHTML = '';
     gameKey=Math.floor(Math.random()*localStorage.length);
     document.getElementById("prompt").innerHTML=localStorage.key(gameKey);
     var crank = document.getElementById("resultButton");
@@ -27,10 +28,10 @@ function startGame(){
             let keyName=localStorage.key(gameKey);
             let valuePair = localStorage.getItem(keyName);
             if(userAnswer==valuePair){
-                document.getElementById("result").innerHTML= "YOU DID IT!!!";
+                document.getElementById("result").innerHTML= `YOU DID IT!!!\n`+`\nKeep up the good work!`;
             }
             else {
-                document.getElementById("result").innerHTML = "Sorry, you didn't get this one right. Try again or press New Card to move on";
+                document.getElementById("result").innerHTML = `Sorry, you didn't get this one right.\n`+`"${valuePair}" was the correct answer`;
             }
         }
   }

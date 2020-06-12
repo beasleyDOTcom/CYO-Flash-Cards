@@ -20,7 +20,7 @@ var bonk = document.getElementById("startButton");
 if(bonk)
     {bonk.addEventListener("click", startGame);}
 //This shows instructions to start game that get overwritten after the game starts.    
-    document.getElementById("result").innerHTML = 'Press "New Card" to begin.';
+    document.getElementById("result").innerHTML = `Press "New Card" to begin.`;
 // generates a random number that selects and presents a key(front size of flash card) and presents it to user.
 function startGame(){
     gameKey=Math.floor(Math.random()*localStorage.length);

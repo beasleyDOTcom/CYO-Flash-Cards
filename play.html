@@ -15,16 +15,19 @@
         </ul> 
     </nav>
     <section id="play" class="section">
-        <h1 class="sectionTitle">Play!</h1>
         <div id="deckHouse">
-            <p>press start to play the game here</p>
-            <button id="startButton" >Start</button>
+            <h1 class="sectionTitle">Press "New Card" to begin!</h1>
+            <button id="startButton" >New Card</button>
             <br>
-            <p id="prompt">oooooooohhhhh</p>
+            <div id="promptBox">
+                <p id="prompt">Your prompt will appear here.</p>
+            </div>
             <p>Submit your answer below</p>
             <input id="userAnswer"></input>
             <button id="resultButton">Submit Answer</button>
-            <h2 id="result">Please...</h2>
+            <div id="resultBox">
+                <h2 id="result">Your result will replace this text.</h2>
+            </div>
         </div>
     </section>
     <script src="cyo.js"></script>

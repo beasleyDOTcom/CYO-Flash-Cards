@@ -15,7 +15,8 @@
   width:100em;
 }
 #welcomeMessage{
-  padding:15%;
+margin-left:1vw;
+margin-right:1vw;
 }
 #navLinks{
   padding: 2vw;

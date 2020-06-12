@@ -4,11 +4,12 @@
   justify-content: center;
   width: 100vw;
   height:10%;
+
 }
 #navBar{
-  border-bottom: solid 5px #fdfb76;
+  border-bottom: solid 5px #ffbc3f;
   position: fixed;
-  background-color: lightblue;
+  background-color: #75dffc;
   top:0;
   left:0;
   width:100em;
@@ -19,32 +20,72 @@
 #navLinks{
   padding: 2vw;
   list-style: none;
-  color: green;
+  color: #753fff;
   font-size: 1.8rem;
+  text-shadow: .5px .5px #ffbc3f;
 }
 .sectionTitle{
-    display:flex;
+  display:flex;
   justify-content:center;
 }
 .section{
-  padding-top:10vh;
-  margin:2%;
-  width: 98%;
+  padding-top:5vh;
+  width: 99vw;
   height: 90vh;
   display:flex;
   justify-content:center;
   flex-direction: column; 
 }
 #deckHouse{
- display:flex;
+  display:flex;
   align-items:center;
   flex-direction:column;
-  background-color:lightblue;
-  height: 80%;
-  width: 60%;
-  padding:2%;
+  background-color:#ffeca0;
+  color: #6f5080;
+  height: 90%;
+  width: 58%;
   margin-right:18%;
-  margin-left:18%;
+  margin-left:20%;
   border-radius:1em;
+  border: 2px solid #ffbc3f;
+}
+body{
+  background-color:#a378bf;
+}
+#businessHalf{
+height: 50%;
+}
+#resultBox{
+
+  border: 4px solid #6f5080;
+  height: 50%;
+  width: 40vw;
+  display:flex;
+  align-items: center;
+  border-radius: 1rem;
+  }
+#result{
+  text-align: center;
   
+}
+p{
+  font-size: 1.5rem;
+}
+button{
+  padding-right: .5rem;
+  padding-left: .5rem;
+  margin:.5rem;
+  border: 2px solid #ffbc3f;
+  text-shadow: .8px .8px white;
+  font-size: 110%;
+  background-color: #75dffc;
+}
+#startButton{
+  margin-top: 1rem;
+  padding: 1rem;
+}
+input{
+  border: 2px solid #ffbc3f;
+  padding: .5rem;
+  border-radius: 5px;
 }

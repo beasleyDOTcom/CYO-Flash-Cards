@@ -17,10 +17,11 @@ var gameKey=0;
 var bonk = document.getElementById("startButton");
 if(bonk)
     {bonk.addEventListener("click", startGame);}
+    
+    document.getElementById("result").innerHTML = 'Press "New Card" to begin.';
 function startGame(){
-    document.getElementById("result").innerHTML = '';
     gameKey=Math.floor(Math.random()*localStorage.length);
-    document.getElementById("prompt").innerHTML=localStorage.key(gameKey);
+    document.getElementById("result").innerHTML=localStorage.key(gameKey);
     var crank = document.getElementById("resultButton");
     if(crank){crank.addEventListener("click", submitAnswer);}
         function submitAnswer(){
@@ -31,7 +32,7 @@ function startGame(){
                 document.getElementById("result").innerHTML= `YOU DID IT!!!\n`+`\nKeep up the good work!`;
             }
             else {
-                document.getElementById("result").innerHTML = `Sorry, you didn't get this one right.\n`+`"${valuePair}" was the correct answer`;
+                document.getElementById("result").innerHTML = `Sorry, you didn't get this one right.\n`+`The correct answer was: "${valuePair}".`;
             }
         }
   }

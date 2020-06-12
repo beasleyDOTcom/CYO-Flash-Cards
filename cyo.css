@@ -13,11 +13,14 @@
   left:0;
   width:100em;
 }
-
+#welcomeMessage{
+  padding:15%;
+}
 #navLinks{
   padding: 2vw;
   list-style: none;
   color: green;
+  font-size: 1.8rem;
 }
 .sectionTitle{
     display:flex;

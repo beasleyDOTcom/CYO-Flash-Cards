@@ -1,3 +1,6 @@
+.forgetMeNot{
+  visibility: hidden;
+}
 #navList{
   list-style: none;
   display: flex;

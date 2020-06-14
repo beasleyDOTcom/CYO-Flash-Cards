@@ -29,6 +29,9 @@ margin-right:2vw;
   font-size: 1.8rem;
   text-shadow: .5px .5px #ffbc3f;
 }
+.aboutSection{
+  padding: 2vh;
+}
 .sectionTitle{
   display:flex;
   justify-content:center;

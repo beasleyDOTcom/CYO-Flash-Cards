@@ -1,19 +1,35 @@
-<html>
 <head>
-<link rel="stylesheet" type="text/css" href="cyo.css">
+    <link rel="stylesheet" type="text/css" href="cyo.css">
+    <title>Create Your Own Flash Cards</title>
 </head>
 <body>
-    <p>Well isn't this great!</p>
-    <div class="houseDivider"> 
-        <button class="favorite">button for life</button>
-       <div class="cardContainer">
-         <div class="frontOfCard">
-            <p>front</p>
+    <nav id="navBar">
+        <ul id="navList">
+            <li><a href="index.html"
+                id="navLinks">Home</a>            </li>
+            <li><a href="create.html"
+                id="navLinks">Create</a>          </li>
+            <li><a href="play.html"
+                 id="navLinks">Play</a>            </li>
+            <li><a href="about.html"
+                id="navLinks">About</a>           </li>
+            <li></li>
+        </ul> 
+    </nav>
+    <section id="play" class="section">
+        <div id="deckHouse">
+            <button id="startButton" >New Card</button>
+            <p>Submit your answer below</p>
+            <input id="userAnswer" required></input>
+            <button id="resultButton">Submit Answer</button>
+            <div id="resultFox">
+                <div class="frontside">
+                    <div class="backside">
+                        <h2 id="result"></h2>
+                    </div>
+                </div>
             </div>
-            <div class="backOfCard">
-             <p>back</p>
-             </div>
         </div>
-    </div>
+    </section>
+    <script src="cyo.js"></script>
 </body>
-</html>

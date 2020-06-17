@@ -24,11 +24,16 @@ if(bonk)
 // generates a random number that selects and presents a key(front size of flash card) and presents it to user.
 function startGame(){
     gameKey=Math.floor(Math.random()*localStorage.length);
-    document.getElementById("result").innerHTML=localStorage.key(gameKey);
+    document.getElementById("backside").innerHTML=localStorage.key(gameKey);
+// Let's try and add the click method to flip.
+var inert = document.querySelector('.inner');
+inert.classList.toggle('is-flipped');
     var crank = document.getElementById("resultButton");
     if(crank){crank.addEventListener("click", submitAnswer);}
 //This uses the random number to get the key() then uses the key to get() the backside of flashcard then compares it to user input.    
         function submitAnswer(){
+            var inert = document.querySelector('.inner');
+inert.classList.remove('is-flipped');
             let userAnswer=document.getElementById("userAnswer").value;
             let keyName=localStorage.key(gameKey);
             let valuePair = localStorage.getItem(keyName);

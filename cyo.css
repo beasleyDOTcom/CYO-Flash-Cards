@@ -85,6 +85,9 @@ body{
 .resultBox:hover .inner{
   transform: rotateX(180deg);
 }
+.inner.is-flipped{
+  transform: rotateX(180deg);
+}
 
 
 .backside, .frontside{

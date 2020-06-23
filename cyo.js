@@ -1,5 +1,12 @@
 //I start a trend of cueing up some event listeners that trigger their respective functions.
 //createCard takes user input and stores it in local storage. 
+function Deck(deckName){
+    this.deckName = deckName;
+}
+function Card(prompt, answer){
+     this.prompt = prompt;
+     this.answer = answer;
+}
 var monster = document.getElementById("createButton");
 if(monster){monster.addEventListener("click", createCard);}
 function createCard(){  
